@@ -1,0 +1,111 @@
+/*
+    1. 선택자를 여러개 선택할때는 ,(쉼표) 구분
+    2. 하위선택자를 선택할떄는 상위선택자 하위선택자 (띄어쓰기) 구분
+
+*/
+
+
+/* 글머리 제거 */
+li{ list-style-type: none;}
+a{ color: black; text-decoration: none;}
+
+
+
+
+#header{
+    width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#main_Logo img{
+    margin: 5px auto;
+}
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#aside{
+    width: 230px;
+}
+#aside h3{
+    font-size: 20px;
+    background-color: cadetblue;
+    color: white;
+    padding: 12px;
+}
+ul{
+     padding: 0px; margin: 0px;
+    } /* ul 기본여백 제거 */
+#aside ul li{
+    padding: 10px;
+    border-bottom: solid 2px #e8e8e8;
+}
+#article{
+    width: 1000px;
+    ;
+}
+#article p,ul{
+    font-weight: bold;
+}
+#article h3{
+    font-size: 20px;
+    border-bottom: solid 2px #e8e8e8;
+    padding-bottom: 20px;
+}
+#main_menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 700px;
+    font-weight: bold;
+}
+#top_menu{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+#top_menu span{  
+    margin: 0 5px;
+}
+#eye{
+    display: block;
+    margin: 0 auto;
+}
+#footer{
+    background-color: #2C2A29;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+#ft_box{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 1280px; margin: 0 auto;
+    padding: 20px 0px;
+    align-items: center;
+}
+#ft_lo{
+    margin: 20px 10px;
+}
+#ft_box ul{
+    margin: 20px 10px; 
+        font-family: 'JalnanGothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+/*#mian_img{
+    display: block; margin: 0 auto;
+}*/
+#main_img{
+    width: 100%; height: 250px;
+    background-image: url(img/main_img.png); /* 배경에 이미지 삽입 */
+    background-repeat: no-repeat; /* 자리가 남으면 채우기 */
+    background-position: center; /* 배경을 가운데로 */
+}
+    

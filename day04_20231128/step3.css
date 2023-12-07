@@ -1,0 +1,54 @@
+*{
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#webWrap{
+    width: 900px; /* 가로 사이즈 */
+    margin: 50px auto; /* 박스 가운데 정렬 */
+    
+}
+header{
+    background-color: red;
+}
+nav{
+    background-color: orange;
+}
+main{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: nowrap;
+}
+article{
+    width: 600px;   /* 부모 900px 에서 600px 사용 */
+}
+aside{
+    width: 300px;   /* 부모 900px 에서 300px 사용 */
+}
+footer{
+    background-color: green;
+}
+
+#header{
+    background-color: blue;
+}
+#nav{
+    background-color: rgb(8, 8, 61);color: white;
+}
+#main{ 
+    background-color: purple;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#article{
+    width: 600px;   /* 부모 900px 에서 600px 사용 */
+}
+#aside{
+    width: 300px;   /* 부모 900px 에서 300px 사용 */
+}
+#footer{
+    background-color: black; color: white;
+}
+
+

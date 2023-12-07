@@ -1,0 +1,55 @@
+.box{
+    border: solid 3px #e8e8e8;
+    width: 400px;
+    padding-bottom: 50px;
+}
+
+.logo{
+    width: 400px;
+    
+}
+.id{width: 300px;
+    height: 40px;
+    margin: 00px 10px 10px 40px;
+    font-weight: bold;
+    
+}
+.but{
+    width: 309px;
+    height: 34px;
+    margin: 0px 10px 10px 40px;
+    background-color: rgb(0, 174, 255);
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.logo2{
+    width: 20px;
+    padding-left: 110px;
+    
+}
+.logo3{
+    text-decoration: none;
+}
+a{
+    font-weight: bold; color: rgb(81, 81, 179);
+}
+.logo4{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+p{
+    border: solid 3px #e8e8e8;
+    width: 400px;
+    text-align: center;
+    padding: 20px 1px
+    
+}
+.logo5{
+    text-decoration: none;
+}

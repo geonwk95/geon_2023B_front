@@ -1,0 +1,44 @@
+/* a 마크업 기본CSS 제거 */
+a{
+    color: black;
+    text-decoration: none;
+}
+a:active{
+    font-size: 20px;
+    color: red;
+}
+a:visited{
+    color: blue;
+    font-size: 10px;
+}
+/*
+    선택자:hover        : 해당 선택자에 마우수를 올렸을때
+    선택자:active       : 해당 선택자에 마우스 왼쪽 클릭하고 있을때
+    선택자:visited      : 해당 링크에 방문한 적이 있을때
+*/
+#header{
+    background-color: aqua;
+}
+#header > ul{
+    display: flex;
+    justify-content: center;
+}
+#header > ul > li{
+    list-style-type: none; margin: 0 10px; /* 글머리 제거 */
+    position: relative; /* 하위 요소의 포지션 기준점 */
+}
+/* li에 마우스를 올렸을때 .subMenu클래스의 display: block */
+#header > ul > li:hover .subMenu{
+    display: block;
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 80px;
+    padding: 0;
+    background-color: yellow;
+}
+.subMenu li{
+    list-style-type: none;
+}

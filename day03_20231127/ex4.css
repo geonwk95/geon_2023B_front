@@ -1,0 +1,35 @@
+/* 전체 구역 */
+.product{
+    width: 400px;
+    border: solid 2px #e8e8e8;
+    margin: 20px;
+}
+/* 이미지 사이즈 */
+.pimg{
+    width: 100px;
+    
+}
+
+/* 두번째 줄 */
+.row2{
+    font-size: 20px;
+    font-weight: bold;
+    border-top: solid 2px #e8e8e8;
+    padding: 30px 10px 10px 10px;
+    
+}/* 세번째 줄 */
+.row3{
+    font-weight: bold;
+    padding: 10px;
+}/* 네번째 줄 */
+.row4{
+    padding: 10px;
+    line-height: 160%;
+}/* 다섯번째 줄 */
+.row5{
+    padding: 10px;
+}/* 강조 색상 */
+.orange{
+    color: orange;
+    font-weight: 800;
+}

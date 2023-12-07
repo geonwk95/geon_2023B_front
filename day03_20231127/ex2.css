@@ -1,0 +1,36 @@
+.content{
+    border: solid 2px gray;
+    background-color: #E8E8E8;
+    width: 400px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+    
+
+h4{
+    text-align: right;
+}
+.title{
+    border-left: 10px solid green;
+    padding-left: 10px;
+}
+.title2{
+    border-left: 10px solid green;
+    padding-left: 10px;
+}
+.contli{
+    margin-bottom:  15px;
+}
+.info{
+    width: 300px;
+    border: solid 2px gray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 40px;
+}
+.contp{
+    border-bottom: dotted 1px gray;
+    padding-bottom: 20px;
+    line-height: 160%;
+}

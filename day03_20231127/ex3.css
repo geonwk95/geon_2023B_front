@@ -1,0 +1,19 @@
+.book{
+    width: 400px;
+}
+
+    /* 제목 숫자 강조*/
+.tno{
+    font-size: 30px;
+    color: orange;
+}    
+.content{
+    background-color: rgb(18, 116, 116);
+    color: white;
+    padding: 20px;
+    width: 500px;
+
+}
+.orange{
+    color: orange;
+}
