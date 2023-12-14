@@ -111,7 +111,8 @@ for( let i = 1 ; i <= line8 ; i++ ){ // f1 s [행]
 console.log( output );
 
 
-
+*/
+/*
 // 문제9) 입력받은 줄(짝수만) 수 만큼 * 출력  [ ex) 10 ]
 let output = ``;
 const line9 = Number( prompt(' 문제9 줄수 : ') );
@@ -135,8 +136,8 @@ for( let i = 1 ; i <= line9/2 ; i++ ){ // f1 s [행]
 } 
     
     console.log( output );
-
 */
+
 // 문제10) 입력받은 줄(홀수만) 수 만큼 * 출력  [ ex) 7 ]
 /*
 output = ``;
@@ -179,8 +180,65 @@ function 문제10(){ // f s
     tableObj.innerHTML = html;
 } // f end 
 
-// 문제9-2 
+// 문제9-2
+function 문제9_2(){ 
+    // 입력
+    const line9 = Number( document.querySelector('#line9').value );
+    // 처리
+    let html = ``;
+        //[행]
+        if(line9%2 == 0){let html = `<tr>`;
+        for( let i = 1 ; i <= line9/2 ; i++ ){ // f1 s [행]
+            // [공백]
+            for( let b = 1 ; b <= line9/2-i ; b++){ html += `<td> </td> `};
+            // [별]
+            for( let s = 1 ; s <= 2 * i - 1; s++){ html +=`<td>★</td>`}
+            
+            // 줄바꿈    
+             html += `</tr>`
+            }
+            for( let i = 1 ; i <= line9/2 ; i++ ){ // f1 s [행]
+            // [공백]
+            for( let b = 1 ; b <= i-1 ; b++){ html +=`<td> </td> `};
+            // [별]
+            for( let s = 1 ; s <= (line9/2-i+1)*2-1; s++){ html +=`<td>★</td>`}
+            
+            // 줄바꿈    
+            html += `</tr>`
+            
+        }
+            // 출력
+        const tableObj = document.querySelector('#resultTable');
+        tableObj.innerHTML = html;
+           
 
+
+        }else{ 
+        for( let i = 1 ; i <= line9/2 ; i++ ){
+            html += `<tr>`; // 행 시작 
+            // [공백]
+            for( let b = 1 ; b <= line9/2-i ; b++){ html += `<td> </td>`};
+            // [별]
+            for( let s = 1 ; s <= 2 * i - 1; s++){ html +=`<td>★</td>`}
+
+            // 줄바꿈    
+            html += `</tr>`
+        } // 행 끝
+
+        for( let i = 1 ; i <= parseInt(line9/2) ; i++ ){ // f1 s [행]
+            // [공백]
+            for( let b = 1 ; b <= i ; b++){ html +=`<td> </td>`};
+              // [별]
+              for( let s = 1 ; s <= (line9/2-i)*2-2; s++){ html +=`<td>★</td>`}
+        
+               // 줄바꿈    
+            html += `</tr>`
+        }
+        // 출력
+        const tableObj = document.querySelector('#resultTable');
+        tableObj.innerHTML = html;
+        }
+}
 /*
 
 
