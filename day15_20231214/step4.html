@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+    <script src='stpe4.js'></script>
+</head>
+<body>
+        <div id="wrap">
+            <div>
+                <h1> 가 계 부 </h1>
+
+            </div>
+
+            <div id="wrapTop">
+            
+                <div id="leftWrap">
+                    날짜:<input  id="dateValue" class="wrapTopLeft" type="date" value=""/>
+                    <br/>
+                    항목:<input  id="textValue" class="wrapTopLeft" type="text" placeholder="항목"/>
+                    <br/>
+                    금액:<input  id="moneyValue" class="wrapTopLeft" type="text" placeholder="금액"/>
+                </div>
+
+                <div id="등록버튼">
+                    <input  onclick="등록함수()" type="button" value="등록" />
+                </div>
+
+            </div>
+
+            <div id="wrap2">
+                <div class="wrapBot">
+                    <div>
+                        <h3>날짜</h3>
+                    </div>
+                    <div>
+                        <h3>항목</h3>
+                    </div>
+                    <div>
+                        <h3>금액</h3>
+                    </div>
+                    <div>
+                        <h3>비고</h3>
+                        
+                    </div>
+                    
+                </div>
+                <div id="table">
+               
+             
+                </div>
+                <div>
+                    <div id="wrapBotBot">
+                        <span>총합계 :
+                            <input type="text" value=""/>
+                        </span>
+                    </div>
+                </div>
+            </div>    
+
+
+        </div>
+</body>
+</html>
