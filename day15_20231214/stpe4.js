@@ -42,7 +42,7 @@ function 출력함수(){     // f s
             <h3>${금액[i]}</h3>
         </div>
         <div>
-            <h3><input onclick="삭제함수( ${ i } )" type="button" value="삭제" /></h3>
+            <h3><input id="등록버튼꾸미기" onclick="삭제함수( ${ i } )" type="button" value="삭제" /></h3>
         </div>
     </div>
 `   

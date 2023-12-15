@@ -65,3 +65,9 @@ h1:after {
     align-items: center;
     font-weight: bold;
 }
+#등록버튼꾸미기{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
