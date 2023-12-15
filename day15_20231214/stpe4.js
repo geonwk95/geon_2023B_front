@@ -28,6 +28,7 @@ function 출력함수(){     // f s
 
     let 등록하는div = ``;
 
+
     for(let i = 0 ; i < 날짜.length ; i++ ){
     
         등록하는div += `  <div class="wrapBot">
@@ -43,12 +44,15 @@ function 출력함수(){     // f s
         <div>
             <h3><input onclick="삭제함수( ${ i } )" type="button" value="삭제" /></h3>
         </div>
-    
     </div>
-`
+`   
 }   
     document.querySelector('#table').innerHTML = 등록하는div
-
+    let 총금액 = 0;
+    for(a = 0 ; a < 금액.length; a++){
+        총금액 += Number(금액[a]);
+}   console.log(총금액) 
+    document.querySelector('#wrapBotBot span').innerHTML = 총금액
 } // f e
 
 function 삭제함수(삭제할인덱스){         // f s
@@ -59,7 +63,3 @@ function 삭제함수(삭제할인덱스){         // f s
 
 출력함수();
 } // f e 
-
-function 총합계(){
-    
-}

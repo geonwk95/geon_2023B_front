@@ -63,7 +63,5 @@ h1:after {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#wrapBotBot > span{
     font-weight: bold;
 }
