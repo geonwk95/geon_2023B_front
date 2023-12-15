@@ -65,9 +65,9 @@ function 출력함수(){
             </div>
 
         </div>`
+        
 
-
-        }
+        }console.log(html)
         // 3.[대입] immerHTML 에 저장된 변수를 대입.
         todoBottom.innerHTML = html ;
 }

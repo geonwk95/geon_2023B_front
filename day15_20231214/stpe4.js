@@ -26,7 +26,7 @@ function 등록함수(){        // f s
 
 function 출력함수(){     // f s
 
-    let 등록하는div = ``;
+    let 등록하는div = ``;  //[1, 2, 3,4,5,6,]
 
 
     for(let i = 0 ; i < 날짜.length ; i++ ){
