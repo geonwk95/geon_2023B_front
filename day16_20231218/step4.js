@@ -1,11 +1,12 @@
-const 등록 = [];
-const 번호 = [];
-const 시간s = [];
-const 시간e = [];
-const 사용자 = [];
 
-const 사용시간 = [];
-const 총금액 = []; /* 하루매출 */
+
+/* const PC사용현황 = {
+    시간s: "" ,
+    시간e: "" ,
+    사용자: ""
+} */
+
+const PC좌석번호상태 = [];
 const 누적된금액 = [];
 
 좌석출력()
@@ -16,9 +17,9 @@ function 좌석출력(){
 
     for(let i = 1; i<=6; i++){
         
-        if( 번호.indexOf(i+"") >= 0 && 시간e[번호.indexOf(i+"")] =='' ){
+        if( PC좌석번호상태.indexOf(i+"") >= 0 && PC관리.시간e[PC좌석번호상태.indexOf(i+"")] =='' ){
         /* 번호의 값이 0보다 크면 있는거 *///끝나는 시간이 없으면 공백처리
-            html +=`<div class="classBox"> ${ 사용자[번호.indexOf(i+"")] } </div>`
+            html +=`<div class="classBox"> ${ PC관리.사용자[PC좌석번호상태.indexOf(i+"")] } </div>`
         } else{
             html +=`<div class="classBox classBox1"> 빈자리 </div>`
         }
@@ -69,14 +70,9 @@ function 종료계산(){
     let 합 = 0;
     for(a=0; a<누적된금액.length; a++){
     합 += 누적된금액[a];
-    }
-    총금액.push(합)
-    console.log("총금액")
-    console.log(총금액)
-    
-    document.querySelector("span").innerHTML = `${총금액}`
+    }   
+    document.querySelector("span").innerHTML = `${합}`
 
-    총금액.splice(0,1)
 }
 
 /* =========================ㅇㅇㅇㅇㅇ============================ */
