@@ -59,11 +59,46 @@ console.log( '안녕하세요'.length );
 console.log( '안녕하세요'.anchor('aaa') );  // 문자열 기본자료형도 .온점 메소드 사용가능하다.
 console.log( '안녕하세요'.bold('aaa') );    
 
-// p. 263
-Number.prototype.sample = 10;
-const i = 273;
-console.log( i.sample );
+// p.263
+Number.prototype.sample = 10;               
+const i = 273;  // 숫자      => 숫자타입    
+console.log( i.sample ); // 가능.????  10
 
-const j = 100;
-console.log( i.sample );
-      
+const j = 100;  // 숫자     => 숫자타입 
+console.log( j.sample ); // 가능.????  10
+
+const i2 = new Number( 273 );
+i2.sample2 = 10;            
+console.log( i2.sample2 );               // 10
+
+const j2 = new Number( 273 );       
+console.log( j2.sample2 );               // undefined
+
+// p.264
+// Number.prototype.power = function ( n  ){ 
+    // n 매개변수 함수호출시 ( ) 넣어주는 값
+Number.prototype.power = function ( n = 2 ){  
+    // n=2 매개변수 함수호출시 ( ) 넣어주는 값 (+만약에 매개변수가 없으면 초기값)
+    console.log( `n : ${n}` );  //
+    console.log( `this : ${ this.valueOf() }` );
+    return this.valueOf() ** n
+}
+const a2 = 12;
+console.log( a2.power() );      // n = 2 , this : 12 , return : 144 
+console.log( a2.power(3) );     // n = 3 , this : 12 , return : 1728
+console.log( a2.power(4) );     // n = 4 , this : 12 , return : 20736
+
+// p.265
+const h = '안녕하세요';
+console.log( h.indexOf('안녕') );   // 0 :문자열내 '안녕'이 존재하면 앞문자의 인덱스로 추출.
+console.log( h.indexOf('하세') );   // 2 :
+console.log( h.indexOf('자바') );   // -1 
+    // vs 
+//console.log( h.contain('안녕') );   // contain is not a function [ contain() 메소드 없다 ]
+
+// js가 편의성으로 제공하면 좋은데 없으니까 내가 만들자.
+String.prototype.contain = function( data ){
+    return this.indexOf( data ) >= 0;   // 0이상이면 true , 아니면 false
+                                        // 인덱스가 존재하면 true 존재하지 않으면 false 
+}; 
+console.log( h.contain('안녕') );
