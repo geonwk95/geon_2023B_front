@@ -70,7 +70,7 @@ body{ background-color: rosybrown;}
 }
 
 #writer{
-    text-align: /*left*/ /*right*/ center ;   /* 텍스트 가로 정령 */
+    text-align: /*left*/ /*right*/ center ;   /* 텍스트 가로 정렬 */
     text-decoration: line-through;  /* 텍스트 선긋기 : line-through 취소선 underline 밑줄 overline 윗줄*/
     text-shadow: 1px 1px 10px rgb(15, 15, 185);  
     /* 텍스트 그림자 : x축위치 y축위치 흐림정도 색상 */

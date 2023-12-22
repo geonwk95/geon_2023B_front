@@ -8,7 +8,7 @@ function 등록(){
         console.log(mid);
         console.log(mpw);
     // 2. 처리
-        // 1. [ 아이디와 비밀번호 ] 회원 으로 객체화ㄴ
+        // 1. [ 아이디와 비밀번호 ] 회원 으로 객체화
     const member = {
         mid : mid ,
         mpw : mpw
